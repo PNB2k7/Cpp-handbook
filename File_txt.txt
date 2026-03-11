@@ -6,77 +6,77 @@ Three class for excuating file:
 
 
 
-* ifstream    : class for reading input data from file
+ifstream    : class for reading input data from file
 
-&nbsp;	ifstream <valuable\_name> (<"directory">)
-
-
-
-* ofstream    : class for writing data into file
-
-&nbsp;	like ifstream
+	ifstream <valuable\_name> (<"directory">)
 
 
 
-* fstream     : class for writing \& reading
+ofstream    : class for writing data into file
+
+	like ifstream
 
 
 
-
-
-&nbsp;			MODE
-
-* ios::in     : input activities (normal mode of ifstream)
-
-
-
-* ios::out    : output activities (normal mode of ofstream)
-
-
-
-* ios::binary : use for binary file
-
-
-
-* ios::ate    : set the file pointer to the end of the file when file is opened
-
-
-
-* ios::app    : if file has data inside, then new data will insert in the end
-
-
-
-* ios::trunc  : when write data into file, old data will be erased
-
-&nbsp;	<class\_file> <valuable\_name>(<"directory">, \[mode])
-
-&nbsp;  or   <valuable\_name>.open(<"directory">,\[mode])
+fstream     : class for writing \& reading
 
 
 
 
 
-&nbsp;	#NOTE: CAN USE PIPE (|) for combine more modes
+				MODE
+
+ios::in     : input activities (normal mode of ifstream)
 
 
 
-&nbsp;	#NOTE: IN DIRECTORY, USING (\\\\) INSTEAD OF (\\)
+ios::out    : output activities (normal mode of ofstream)
+
+
+
+ios::binary : use for binary file
+
+
+
+ios::ate    : set the file pointer to the end of the file when file is opened
+
+
+
+ios::app    : if file has data inside, then new data will insert in the end
+
+
+
+ios::trunc  : when write data into file, old data will be erased
+
+	<class_file> <valuable_name>(<"directory">, [mode])
+
+	or   <valuable_name>.open(<"directory">,[mode])
 
 
 
 
 
-&nbsp;			READING \& WRITING (TEXT)
-
-* <file\_name> << <valuable\_name>        : writing data from value into file
+	#NOTE: CAN USE PIPE (|) for combine more modes
 
 
 
-* <file\_name> >> <valuable\_name>        : reading data from file into value (stop if get " ") 
+	#NOTE: IN DIRECTORY, USING (\\\\) INSTEAD OF (\\)
 
 
 
-* getline(<file\_name>, <valuable\_name>) : reading data from file into value (stop if get "\\n")
+
+
+			READING & WRITING (TEXT)
+
+<file_name> << <valuable_name>        : writing data from value into file
+
+
+
+<file_name> >> <valuable_name>        : reading data from file into value (stop if get " ") 
+
+
+
+getline(<file_name>, <valuable_name>) : reading data from file into value (stop if get "\n")
 
 
 
