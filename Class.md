@@ -2,21 +2,21 @@ Class defination:
 
 
 
-&#x09;class <name\_class>{
+	class <name\_class>{
 
-&#x09;	private:
+		private:
 
-&#x09;		#Variables \& functions
+			#Variables \& functions
 
-&#x09;	protected:
+		protected:
 
-&#x09;		#Variables \& functions
+			#Variables \& functions
+			
+		public:
 
-&#x09;	public:
+			#Variables \& functions
 
-&#x09;		#Variables \& functions
-
-&#x09;};
+};
 
 
 
@@ -46,11 +46,11 @@ Elements in class can be divided into 2 groups:
 
 
 
-&#x09;		ATTRIBUTES
+		ATTRIBUTES
 
 Declaration: 
 
-&#x09;<type> <name\_attributes>
+<type> <name\_attributes>
 
 Notes:
 
@@ -63,23 +63,23 @@ Using attributes:
 
 * If it can be accessed from outside a class:
 
-&#x09;<class\_name>.<name\_attribute>;
+<class\_name>.<name\_attribute>;
 
 * If using inside class:
 
-&#x09;<name\_attribute>;
+<name\_attribute>;
 
 NOTES: If name of attribute is same with global variable. We need to show exacly name attribute of the class. 
 
-&#x09;<class\_name>::<name\_attribute>;
+<class\_name>::<name\_attribute>;
 
 
 
-&#x09;		METHODS
+		METHODS
 
 Declaration:
 
-&#x09;<return\_type> <name\_method>(\[Parameters])
+<return\_type> <name\_method>(\[Parameters])
 
 like as functions
 
@@ -89,21 +89,21 @@ Defination:
 
 * Set inside class
 
-&#x09;<return\_type> <name\_method>(\[Parameters]){
+<return\_type> <name\_method>(\[Parameters]){
 
-&#x09;	#Code
+	#Code
 
-&#x09;}
+}
 
 
 
 * Set outside:
 
-&#x09;<return\_type> <class\_name>::<name\_method>(\[Parametes]){
+<return\_type> <class\_name>::<name\_method>(\[Parametes]){
 
-&#x09;	#Code
+	#Code
 
-&#x09;}
+}
 
 NOTES:
 
@@ -116,31 +116,31 @@ Using methods:
 
 * If can be used outside class:
 
-&#x09;<class\_name>.<name\_method>(\[Parameters]);
+<class\_name>.<name\_method>(\[Parameters]);
 
 * Use inside:
 
-&#x09;<name\_method>(\[Parameters]);
+<name\_method>(\[Parameters]);
 
 
 
 NOTES: When use a method in another method inside class, but method\_name duplicate with global function
 
-&#x09;<class\_name>::<name\_method>(\[Parameters]);
+<class\_name>::<name\_method>(\[Parameters]);
 
 
 
 
 
-&#x09;		SCOPE
+		SCOPE
 
-&#x09;blocks < functions < class < file
-
-
+blocks < functions < class < file
 
 
 
-&#x09;		FRIEND
+
+
+		FRIEND
 
 Friend function: 
 
@@ -149,7 +149,7 @@ Friend function:
 
 
 
-&#x09;Free function
+Free function
 
 
 
@@ -159,11 +159,11 @@ Friend function:
 
 class <class\_name>{
 
-&#x09;//Codes
+//Codes
 
 //Declaring friend functions
 
-&#x09;friend <return\_type> <name\_method>(\[Parameters]);
+friend <return\_type> <name\_method>(\[Parameters]);
 
 };
 
@@ -171,9 +171,9 @@ class <class\_name>{
 
 <return\_type> <name\_method>(\[Parameters]){
 
-&#x09;//Can access directly private elements of class 
+//Can access directly private elements of class 
 
-&#x09;//that declares this method
+//that declares this method
 
 }
 
@@ -187,7 +187,7 @@ NOTES:
 
 
 
-&#x09;Method in a class is friend of another class
+Method in a class is friend of another class
 
 
 
