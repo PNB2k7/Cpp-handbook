@@ -236,6 +236,40 @@ NOTES:
 - In case, class B is friend A, but A don't have to friend B
 - All methods in B can access member in class A (through an object has A type)
 
+		Constructor & Destructor function
+
+	Declaring Constructor function
+
+#Example
+
+	class <class_name>{
+		public:
+			<class_name>([<Parameters>]);
+	};
+
+Notes:
+- Constructor must has same name with class
+- No <return_type>
+- Only in public
+- Can have many constructor
+- Class should have at least 1 constructor that doesn't need parameters (this constructor when using don't need '()' like function)
+- To have less constructors, we should implicit values in contructor ( declaration which doesn't give parameters also use that)
 
 
+	Declaring Destructor function 
+(Use when class has pointer in attributes)
+
+#Example
+	class <class_name>{
+		public:
+			~<class_name>([<Parameters>])
+	};
+
+Notes:
+- Must have ~
+- No <return_type>
+- Only in public
+- Each class have no more than 1 destructor
+- If not declare destructor, C++ will use default destructor
+- Should use when class has pointers
 
