@@ -171,9 +171,7 @@ friend <return\_type> <name\_method>(\[Parameters]);
 
 <return\_type> <name\_method>(\[Parameters]){
 
-//Can access directly private elements of class 
-
-//that declares this method
+//Can access directly private elements of class that declares this method
 
 }
 
