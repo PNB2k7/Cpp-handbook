@@ -1,14 +1,14 @@
-&#x09;		Pointer's Objects	
+    		Pointer's Objects	
 
 
 
-&#x09;Declaration:
+    Declaration:
 
 <class\_name> \*<object\_ptr\_name>;
 
 
 
-&#x09;Memory Allocation
+    Memory Allocation
 
 <object\_ptr\_name> = new <class\_name>(\[Arguments]);
 
@@ -21,29 +21,29 @@ Notes:
 
 
 
-&#x09;Using Pointer
+    Using Pointer
 
-\#If don't use "new", pointer can point to the address of an existing object
+  If don't use "new", pointer can point to the address of an existing object
 
 <object\_ptr\_name> = \&<object>;
 
 
 
-\#When access to member of pointer object
+  When access to member of pointer object
 
 <object\_ptr\_name> -> <member>(\[Arguments]); //Arguments with a method
 
 
 
-&#x09;Free Pointer
+    Free Pointer
 
 delete <object\_ptr\_name>; //Only use when pointer have memory allocation by "new"
 
 
 
-&#x09;		Arrays Objects 
+    		Arrays Objects 
 
-\#Static List Objects
+  Static List Objects
 
 <class\_name> <list\_name>\[<Quantity>];
 
@@ -56,7 +56,7 @@ Notes:
 
 
 
-\#Dynamic List Object
+  Dynamic List Object
 
 <class\_name> \*<list\_name> = new <class\_name>\[<Quantity>];
 
@@ -66,7 +66,7 @@ Notes:
 
 
 
-&#x09;Using list
+    Using list
 
 <list\_name>\[<index>].<member>(\[Arguments]);
 
